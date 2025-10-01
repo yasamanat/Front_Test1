@@ -18,7 +18,7 @@ function App() {
            <input type="text" placeholder="جستجوی محصولات" className="text-right rounded-4xm bg-[#ebebebd5] w-[300px] h-[50px]"   />
 
            <button className="bg-black text-amber-50 h-[50px] p-1 cursor-grab rounded-4xl">ورود / عضویت</button>
-           <button className="bg-black text-amber-50  p-1 cursor-grab w-[100px]"> <SlBasket/>سبد خرید</button>
+           <button className="bg-black text-amber-50  p-1 cursor-grab w-[]"> <SlBasket/>سبد خرید</button>
         </div>
       </header>
       <nav className="flex justify-between bg-[#ebebebd5]"> 
