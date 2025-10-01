@@ -3,42 +3,75 @@ import { CiInstagram } from "react-icons/ci";
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 
+import { LuShoppingCart } from "react-icons/lu";
+import { MdOutlineDiscount } from "react-icons/md";
+import { IoCallOutline } from "react-icons/io5";
+import { LuMessageCircleWarning } from "react-icons/lu";
+import { CgWebsite } from "react-icons/cg";
+
+
 function App() {
 
   return (
     <div lang="fa" style={{ 'direction': 'rtl' }}>
 
-      <header className="flex flex-row-reverse justify-around m-3">
+      <header className="flex justify-around m-3">
         <div><img src="https://laletka.com/wp-content/uploads/2022/05/laletka-brand-Horz.webp" className="w-[200px]" alt="logo of brand" /></div>
         <div className="flex gap-2.5 flex-row-reverse">
-          <button className="flex items-center gap-2 bg-black text-amber-50 px-3 py-1 rounded-md hover:bg-gray-800 transition cursor-pointer">
+         
+          <button className="flex items-center  h-[50px] bg-black text-amber-50 px-3  rounded-md hover:bg-gray-800 transition cursor-pointer">
             <SlBasket className="w-5 h-5" />
             <span>سبد خرید</span>
           </button>
-          <input type="text" placeholder="جستجوی محصولات" className="text-right rounded-4xm bg-[#ebebebd5] w-[300px] h-[50px]" />
-
-          <button className="bg-black text-amber-50 h-[50px] p-1 cursor-grab rounded-4xl">ورود / عضویت</button>
+          <button className="bg-black text-amber-50 h-[50px] p-1 cursor-grab rounded-md">ورود / عضویت</button>
+           
+          <input type="text" placeholder="جستجوی محصولات"  className="text-right rounded-md bg-[#ebebebd5] w-[300px] h-[50px] px-2" />
 
 
 
         </div>
       </header>
-      <nav className="flex justify-between bg-[#ebebebd5]">
-        <div >
-          <ul className="flex gap-3">
-            <li>جستجوی محصولات</li>
-            <li>فروشگاه</li>
-            <li>وبلاگ</li>
-            <li>تخفیف</li>
-            <li>درباره ما</li>
-            <li>تماس با ما</li>
-          </ul>
-        </div>
-        <div>
-          <CiInstagram />?
-          <img src={FaTelegramPlane} alt="" />
-          <img src={FaWhatsapp} alt="" />
-        </div>
+      <nav className=" bg-[#ebebebd5] sticky top-0 z-50" >
+        <div className="p-4 flex justify-around">
+          <div >
+           <ul className="flex gap-6 text-sm md:text-base text-gray-700">
+              <li className=" transition group reletive">
+                <span>جستجوی محصولات</span>
+                <ul className="group-hover:block absolute hidden  bg-white shadow-md rounded-md w-40 p-4">
+                  <a href="#"><li className="hover:text-black tracking-normal">کت و مانتو </li></a>
+                  <a href="#"><li className="hover:text-black tracking-normal"> بافت و یقه اسکی </li></a>
+                  <a href="#"><li className="hover:text-black tracking-normal">شومیز و پیراهن</li></a>
+                  <a href="#"><li className="hover:text-black tracking-normal">پالتو و شکت</li></a>
+                </ul>
+              </li>
+              <li className="flex items-center hover:text-black transition">
+                <LuShoppingCart />فروشگاه
+              </li>
+
+              <li className="flex items-center hover:text-black transition">
+               <CgWebsite />وبلاگ
+              </li>
+
+              <li className="flex items-center hover:text-black transition">
+                <MdOutlineDiscount />تخفیف
+              </li>
+
+              <li className="flex items-center hover:text-black transition">
+               <LuMessageCircleWarning />درباره ما
+              </li>
+
+              <li className="flex items-center hover:text-black transition">
+                <IoCallOutline />تماس با ما
+              </li>
+            </ul>
+          </div>
+       <div className="flex  items-center gap-4 ">
+          <a href="#" className="inline-flex"><CiInstagram className="text-2xl md:text-3xl hover:opacity-80 transition"/></a>
+          <a href="#" className="inline-flex"><FaTelegramPlane className="text-2xl md:text-3xl hover:opacity-80 transition"/></a>
+          <a href="#" className="inline-flex"><FaWhatsapp className="text-2xl md:text-3xl hover:opacity-80 transition"/></a>
+       </div>
+       </div>
+        
       </nav>
       {/* <div className="flex bg-box flex-row-reverse w-[440px] p-3 rounded-lg">
         <div className="flex-1 justify-items-center">
