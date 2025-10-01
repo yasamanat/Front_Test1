@@ -73,16 +73,61 @@ function App() {
        </div>
         
       </nav>
-      {/* <div className="flex bg-box flex-row-reverse w-[440px] p-3 rounded-lg">
-        <div className="flex-1 justify-items-center">
-          <img src="https://laletka.com/wp-content/uploads/2025/05/new-collection.png" alt="" />
-        </div>
-        <div className="flex-1 text-center justify-items-center pt-5">
-          <strong>new collection</strong> <br />
-          <small>کالکشن جدید</small>
-        </div>
+      <section> 
+        <div className="flex gap-3.5 m-6 justify-center"> 
+          <div>
+            <div className="flex bg-box flex-row-reverse w-[400px] p-3 rounded-lg">
+              <div className="flex-1 justify-items-center">
+                <img src="https://laletka.com/wp-content/uploads/2025/05/overshirtt-100x100.png" alt="" />
+              </div>
+              <div className="flex-1 text-center justify-items-center pt-5">
+                <strong>Overshirt</strong> <br />
+                <small> اورشرت</small>
+              </div>
+            </div>
+           </div>
+           <div>
+            <div className="flex bg-box flex-row-reverse w-[400px]  p-3 rounded-lg">
+              <div className="flex-1 justify-items-center">
+                <img src="https://laletka.com/wp-content/uploads/2025/05/new-collection.png" alt="" />
+              </div>
+              <div className="flex-1 text-center justify-items-center pt-5">
+                <strong>ncoat & casual coat</strong> <br />
+                <small>کت و مانتو</small>
+              </div>
+            </div>
+           </div>
+           <div>
+            <div className="flex bg-box flex-row-reverse w-[400px]   p-3 rounded-lg">
+              <div className="flex-1 justify-items-center">
+                <img src="https://laletka.com/wp-content/uploads/2025/05/new-collection.png" alt="" />
+              </div>
+              <div className="flex-1 text-center justify-items-center pt-5">
+                <strong>shirt & dress</strong> <br />
+                <small>شومیز  و پیراهن</small>
+              </div>
+            </div>
+           </div>
+           <div>
+            <div className="flex bg-box flex-row-reverse w-[400px]   p-3 rounded-lg">
+              <div className="flex-1 justify-items-center">
+                <img src="https://laletka.com/wp-content/uploads/2025/05/new-collection.png" alt="" />
+              </div>
+              <div className="flex-1 text-center justify-items-center pt-5">
+                <strong>new collection</strong> <br />
+                <small>کالکشن جدید</small>
+              </div>
+            </div>
+           </div>
+          
+           
+           
 
-      </div> */}
+        </div>
+       
+        
+      </section>
+     
     </div>
   )
 }
