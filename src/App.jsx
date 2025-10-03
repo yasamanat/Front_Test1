@@ -11,6 +11,7 @@ import { CgWebsite } from "react-icons/cg";
 import { FaChevronDown } from "react-icons/fa";
 import { FaChevronLeft } from "react-icons/fa6";
 import Footer from "./component/Footer/Footer";
+import SignIn from "./pages/signin";
 
 
 
@@ -498,6 +499,7 @@ const instanceOptions = {
       </section>
 
       <Footer/>
+      <SignIn/>
     </div>
     
   )
