@@ -10,6 +10,7 @@ import { LuMessageCircleWarning } from "react-icons/lu";
 import { CgWebsite } from "react-icons/cg";
 import { FaChevronDown } from "react-icons/fa";
 import { FaChevronLeft } from "react-icons/fa6";
+import Footer from "./component/Footer/Footer";
 
 
 
@@ -293,23 +294,23 @@ const instanceOptions = {
     {/* <!-- Carousel wrapper --> */}
     <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
          {/* <!-- Item 1 --> */}
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <div className=" duration-700 ease-in-out" data-carousel-item>
             <img src="https://laletka.com/wp-content/uploads/1404/07/3S6A2462-1-768x890.jpg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
         </div>
         {/* <!-- Item 2 --> */}
-        <div className="hidden duration-700 ease-in-out" data-carousel-item>
+        <div className=" duration-700 ease-in-out" data-carousel-item>
             <img src="https://laletka.com/wp-content/uploads/1404/07/IMG_20250928_171707_899.jpg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
         </div>
         {/* <!-- Item 3 --> */}
-        <div className="hidden duration-700 ease-in-out" data-carousel-item>
+        <div className=" duration-700 ease-in-out" data-carousel-item>
             <img src="https://laletka.com/wp-content/uploads/1404/07/3S6A0927-2-1.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
         </div>
         {/* <!-- Item 4 --> */}
-        <div className="hidden duration-700 ease-in-out" data-carousel-item>
+        <div className=" duration-700 ease-in-out" data-carousel-item>
             <img src="https://laletka.com/wp-content/uploads/1404/07/3S6A0927-2-1.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
         </div>
         {/* <!-- Item 5 --> */}
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <div classname="hidden duration-700 ease-in-out" data-carousel-item>
             <img src="https://laletka.com/wp-content/uploads/1404/07/3S6A0927-2-1.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
         </div>
     </div>
@@ -496,8 +497,9 @@ const instanceOptions = {
           </div>
       </section>
 
-
+      <Footer/>
     </div>
+    
   )
 }
 
