@@ -12,6 +12,7 @@ import { FaChevronDown } from "react-icons/fa";
 import { FaChevronLeft } from "react-icons/fa6";
 import Footer from "./component/Footer/Footer";
 import SignIn from "./pages/signin";
+import Slider from "./component/slider/slider";
 
 
 
@@ -362,44 +363,44 @@ const instanceOptions = {
         <div>
           <div id="carousel-example" class="relative w-full">
     {/* <!-- Carousel wrapper --> */}
-    <div
+    {/* <div
         class="relative h-56 overflow-hidden rounded-lg sm:h-64 xl:h-80 2xl:h-96"
     >
         {/* <!-- Item 1 --> */}
-        <div id="carousel-item-1" class="hidden duration-700 ease-in-out">
+        {/* <div id="carousel-item-1" class="hidden duration-700 ease-in-out">
             <img
                 src="/docs/images/carousel/carousel-1.svg"
                 class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
                 alt="..."
             />
-        </div>
+        </div> */}
         {/* <!-- Item 2 --> */}
-        <div id="carousel-item-2" class="hidden duration-700 ease-in-out">
+        {/* <div id="carousel-item-2" class="hidden duration-700 ease-in-out">
             <img
                 src="/docs/images/carousel/carousel-2.svg"
                 class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
                 alt="..."
             />
-        </div>
+        </div> */}
         {/* <!-- Item 3 --> */}
-        <div id="carousel-item-3" class="hidden duration-700 ease-in-out">
+        {/* <div id="carousel-item-3" class="hidden duration-700 ease-in-out">
             <img
                 src="/docs/images/carousel/carousel-3.svg"
                 class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
                 alt="..."
             />
-        </div>
+        </div> */}
         {/* <!-- Item 4 --> */}
-        <div id="carousel-item-4" class="hidden duration-700 ease-in-out">
+        {/* <div id="carousel-item-4" class="hidden duration-700 ease-in-out">
             <img
                 src="/docs/images/carousel/carousel-4.svg"
                 class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
                 alt="..."
             />
-        </div>
-    </div>
+        </div> */}
+    {/* </div> */} 
     {/* <!-- Slider indicators --> */}
-    <div
+    {/* <div
         class="absolute bottom-5 left-1/2 z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse"
     >
         <button
@@ -430,9 +431,9 @@ const instanceOptions = {
             aria-current="false"
             aria-label="Slide 4"
         ></button>
-    </div>
+    </div> */}
     {/* <!-- Slider controls --> */}
-    <button
+    {/* <button
         id="data-carousel-prev"
         type="button"
         class="group absolute left-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
@@ -457,8 +458,8 @@ const instanceOptions = {
             </svg>
             <span class="hidden">Previous</span>
         </span>
-    </button>
-    <button
+    </button> */}
+    {/* <button
         id="data-carousel-next"
         type="button"
         class="group absolute right-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
@@ -483,7 +484,7 @@ const instanceOptions = {
             </svg>
             <span class="hidden">Next</span>
         </span>
-    </button>
+    </button> */}
 </div>
         </div>
       </div>
@@ -500,6 +501,7 @@ const instanceOptions = {
 
       <Footer/>
       <SignIn/>
+      <Slider/>
     </div>
     
   )
