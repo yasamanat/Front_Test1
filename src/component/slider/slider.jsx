@@ -1,35 +1,66 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Autoplay, Navigation} from 'swiper/modules';
+
 import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import 'swiper/css/effect-fade';
 
 export default function Slider() {
   return (
-    <div className="w-full max-w-4xl mx-auto mt-6">
+    <div className="w-full max-w-6xl mx-auto mt-8 m-5" >
       <Swiper
-        spaceBetween={20}
-        slidesPerView={4}
+        modules={[Pagination, Autoplay, Navigation]}
+        slidesPerView={1}                          
         loop={true}
-        autoplay={{ delay: 5000 }}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+           bulletClass:
+            'swiper-pagination-bullet bg-gray-400 opacity-50 w-3 h-3 mx-1 rounded-full transition-all duration-300', // ⚪ نقطه معمولی
+          bulletActiveClass:
+            'swiper-pagination-bullet bg-yellow-400 opacity-100 scale-150 shadow-md transition-all duration-300', // 🟡 نقطه فعال
+        }}
+        navigation                                 
+        className="rounded-3xl shadow-2xl overflow-hidden relative"
       >
+        
         <SwiperSlide>
-          <img
-            src="https://laletka.com/wp-content/uploads/1404/07/3S6A2462-1-768x890.jpg"
-            alt="slide 1"
-            className="rounded-xl w-full  h-[400px] object-cover"
-          />
+          <div className="relative h-[500px]">
+            <img
+              src="https://laletka.com/wp-content/uploads/1404/07/3S6A2462-1-768x890.jpg"
+              alt="slide 1"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+           
+          </div>
         </SwiperSlide>
+
+      
         <SwiperSlide>
-          <img
-            src="https://laletka.com/wp-content/uploads/1404/07/IMG_20250928_171707_899.jpg"
-            alt="slide 2"
-            className="rounded-xl w-full h-[400px] object-cover  "
-          />
+          <div className="relative h-[500px]">
+            <img
+              src="https://laletka.com/wp-content/uploads/1404/07/IMG_20250928_171707_899.jpg"
+              alt="slide 2"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+            
+          </div>
         </SwiperSlide>
+
+      
         <SwiperSlide>
-          <img
-            src="https://laletka.com/wp-content/uploads/1404/07/3S6A0927-2-1.jpg"
-            alt="slide 3"
-            className="rounded-xl w-full h-[400px] object-cover  "
-          />
+          <div className="relative h-[500px]">
+            <img
+              src="https://laletka.com/wp-content/uploads/1404/07/3S6A0927-2-1.jpg"
+              alt="slide 3"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+          
+          </div>
         </SwiperSlide>
       </Swiper>
     </div>
@@ -45,49 +76,3 @@ export default function Slider() {
 
 
 
-
-// import { Swiper, SwiperSlide } from 'swiper/react';
-// import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-
-// import 'swiper/css';
-// import 'swiper/css/navigation';
-// import 'swiper/css/pagination';
-
-// export default function Slider() {
-//   return (
-//     <div className="w-full max-w-4xl mx-auto mt-6">
-//       <Swiper
-//         modules={[Autoplay, Pagination, Navigation]} // 👈 ماژول‌ها رو اضافه کن
-//         spaceBetween={20}
-//         slidesPerView={1}
-//         loop={true}
-//         autoplay={{ delay: 3000, disableOnInteraction: false }}
-//         pagination={{ clickable: true }}
-//         navigation
-//         className="rounded-xl shadow-lg"
-//       >
-//         <SwiperSlide>
-//           <img
-//             src="https://laletka.com/wp-content/uploads/1404/07/3S6A2462-1-768x890.jpg"
-//             alt="slide 1"
-//             className="rounded-xl w-full h-[400px] object-cover"
-//           />
-//         </SwiperSlide>
-//         <SwiperSlide>
-//           <img
-//             src="https://laletka.com/wp-content/uploads/1404/07/IMG_20250928_171707_899.jpg"
-//             alt="slide 2"
-//             className="rounded-xl w-full h-[400px] object-cover"
-//           />
-//         </SwiperSlide>
-//         <SwiperSlide>
-//           <img
-//             src="https://laletka.com/wp-content/uploads/1404/07/3S6A0927-2-1.jpg"
-//             alt="slide 3"
-//             className="rounded-xl w-full h-[400px] object-cover"
-//           />
-//         </SwiperSlide>
-//       </Swiper>
-//     </div>
-//   );
-// }

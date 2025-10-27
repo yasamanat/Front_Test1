@@ -361,9 +361,9 @@ const instanceOptions = {
         <p className="text-[#737373] ">ما تمام تلاشمون رو برای جلب رضایت شما انجام میدیم و از نظرات شما استقبال میکنیم.</p>
 
         <div>
-          <div id="carousel-example" class="relative w-full">
-    {/* <!-- Carousel wrapper --> */}
-    {/* <div
+          {/* <div id="carousel-example" class="relative w-full"> */}
+              {/* <!-- Carousel wrapper --> */}
+              {/* <div
         class="relative h-56 overflow-hidden rounded-lg sm:h-64 xl:h-80 2xl:h-96"
     >
         {/* <!-- Item 1 --> */}
@@ -398,9 +398,9 @@ const instanceOptions = {
                 alt="..."
             />
         </div> */}
-    {/* </div> */} 
-    {/* <!-- Slider indicators --> */}
-    {/* <div
+              {/* </div> */} 
+              {/* <!-- Slider indicators --> */}
+              {/* <div
         class="absolute bottom-5 left-1/2 z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse"
     >
         <button
@@ -431,9 +431,9 @@ const instanceOptions = {
             aria-current="false"
             aria-label="Slide 4"
         ></button>
-    </div> */}
-    {/* <!-- Slider controls --> */}
-    {/* <button
+              </div> */}
+              {/* <!-- Slider controls --> */}
+              {/* <button
         id="data-carousel-prev"
         type="button"
         class="group absolute left-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
@@ -458,8 +458,8 @@ const instanceOptions = {
             </svg>
             <span class="hidden">Previous</span>
         </span>
-    </button> */}
-    {/* <button
+              </button> */}
+              {/* <button
         id="data-carousel-next"
         type="button"
         class="group absolute right-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
@@ -484,8 +484,9 @@ const instanceOptions = {
             </svg>
             <span class="hidden">Next</span>
         </span>
-    </button> */}
-</div>
+              </button> */}
+              <Slider/>
+          {/* </div> */}
         </div>
       </div>
      </section>
@@ -501,7 +502,7 @@ const instanceOptions = {
 
       <Footer/>
       <SignIn/>
-      <Slider/>
+      {/* <Slider/> */}
     </div>
     
   )
