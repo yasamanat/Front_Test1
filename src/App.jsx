@@ -13,6 +13,7 @@ import { FaChevronLeft } from "react-icons/fa6";
 import Footer from "./component/Footer/Footer";
 import SignIn from "./pages/signin";
 import Slider from "./component/slider/slider";
+import CategoryCard from "./component/CategoryCard/CategoryCard";
 
 
 
@@ -151,135 +152,71 @@ const instanceOptions = {
         
       </nav>
       <section> 
-        <div className="flex gap-3.5 m-6 justify-center flex-row-reverse"> 
-          <div>
-            <div className="flex bg-box flex-row-reverse flex-1 p-3 rounded-lg">
-              <div className="flex-1 justify-items-center">
-                <img src="https://laletka.com/wp-content/uploads/2025/05/overshirtt-100x100.png" width="120px" alt="" />
-              </div>
-              <div className="flex-1 text-center justify-items-center pt-5">
-                <strong>Overshirt</strong> <br />
-                <small> اورشرت</small>
-              </div>
-            </div>
-           </div>
-           <div>
-            <div className="flex bg-box flex-row-reverse flex-1  p-3 rounded-lg">
-              <div className="flex-1 justify-items-center">
-                <img src="https://laletka.com/wp-content/uploads/2024/07/coat-1-100x100.png" className="img-box" alt="" />
-              </div>
-              <div className="flex-1 text-center justify-items-center pt-5">
-                <strong>ncoat & casual coat</strong> <br />
-                <small>کت و مانتو</small>
-              </div>
-            </div>
-           </div>
-           <div>
-            <div className="flex bg-box flex-row-reverse flex-1   p-3 rounded-lg">
-              <div className="flex-1 justify-items-center">
-                <img src="https://laletka.com/wp-content/uploads/2024/07/shirt.png" className="img-box" alt="" />
-              </div>
-              <div className="flex-1 text-center justify-items-center pt-5">
-                <strong>shirt & dress</strong> <br />
-                <small>شومیز  و پیراهن</small>
-              </div>
-            </div>
-           </div>
-           <div>
-            <div className="flex bg-box flex-row-reverse flex-1   p-3 rounded-lg">
-              <div className="flex-1 justify-items-center">
-                <img src="https://laletka.com/wp-content/uploads/2024/07/pants-skirts.png" className="img-box" alt="" />
-              </div>
-              <div className="flex-1 text-center justify-items-center pt-5">
-                <strong>pants and skirt</strong> <br />
-                <small>شلوار و دامن</small>
-              </div>
-            </div>
-           </div>
-           <div>
-            <div className="flex bg-box flex-row-reverse flex-1   p-3 rounded-lg">
-              <div className="flex-1 justify-items-center">
-                <img src="https://laletka.com/wp-content/uploads/2025/05/new-collection.png" className="img-box" alt="" />
-              </div>
-              <div className="flex-1 text-center justify-items-center pt-5">
-                <strong>new collection</strong> <br />
-                <small>کالکشن جدید</small>
-              </div>
-            </div>
-           </div>
-            
-           
-           
-          
-           
-           
+       
+        <div className="flex gap-3.5 m-6 justify-center flex-row-reverse flex-wrap">
+          <CategoryCard
+            imgSrc="https://laletka.com/wp-content/uploads/2025/05/overshirtt-100x100.png"
+            title="Overshirt"
+            subtitle="اورشرت"
+          />
 
+          <CategoryCard
+            imgSrc="https://laletka.com/wp-content/uploads/2024/07/coat-1-100x100.png"
+            title="ncoat & casual coat"
+            subtitle="کت و مانتو"
+          />
+
+          <CategoryCard
+            imgSrc="https://laletka.com/wp-content/uploads/2024/07/shirt.png"
+            title="shirt & dress"
+            subtitle="شومیز و پیراهن"
+          />
+
+          <CategoryCard
+            imgSrc="https://laletka.com/wp-content/uploads/2024/07/pants-skirts.png"
+            title="pants and skirt"
+            subtitle="شلوار و دامن"
+          />
+
+          <CategoryCard
+            imgSrc="https://laletka.com/wp-content/uploads/2025/05/new-collection.png"
+            title="new collection"
+            subtitle="کالکشن جدید"
+          />
         </div>
 
-        <div className="flex gap-3.5 m-6 justify-center flex-row-reverse"> 
-          <div className="felx flex-wrap">
-            <div className="flex bg-box flex-row-reverse flex-1 p-3 rounded-lg">
-              <div className="flex-1 justify-items-center">
-                <img src="https://laletka.com/wp-content/uploads/2024/07/jacket-raincoat.png" className="img-box" alt="" />
-              </div>
-              <div className="flex-1 text-center justify-items-center pt-5">
-                <strong>puffer an trench coat</strong> <br />
-                <small> کا\شن و بارونی</small>
-              </div>
-            </div>
-           </div>
-           <div>
-            <div className="flex bg-box flex-row-reverse flex-1  p-3 rounded-lg flex-wrap">
-              <div className="flex-1 justify-items-center">
-                <img src="https://laletka.com/wp-content/uploads/2024/07/pullover-turtleneck.png" className="img-box" alt="" />
-              </div>
-              <div className="flex-1 text-center justify-items-center pt-5 ">
-                <strong>pullover and turtleneck</strong> <br />
-                <small>بافت و یقه اسکی</small>
-              </div>
-            </div>
-           </div>
-           <div>
-            <div className="flex bg-box flex-row-reverse flex-1   p-3 rounded-lg">
-              <div className="flex-1 justify-items-center">
-                <img src="https://laletka.com/wp-content/uploads/2024/07/overcoat-jacket.png" className="img-box" alt="" />
-              </div>
-              <div className="flex-1 text-center justify-items-center pt-5">
-                <strong>shirt & dress</strong> <br />
-                <small>\التو و شکت</small>
-              </div>
-            </div>
-           </div>
-           <div>
-            <div className="flex bg-box flex-row-reverse flex-1   p-3 rounded-lg">
-              <div className="flex-1 justify-items-center">
-                <img src="https://laletka.com/wp-content/uploads/2024/07/vest-poncho.png" className="img-box" alt="" />
-              </div>
-              <div className="flex-1 text-center justify-items-center pt-5">
-                <strong>vest and panchu</strong> <br />
-                <small>وست و \انچو</small>
-              </div>
-            </div>
-           </div>
-           <div>
-            <div className="flex bg-box flex-row-reverse flex-1   p-3 rounded-lg">
-              <div className="flex-1 justify-items-center">
-                <img src="https://laletka.com/wp-content/uploads/2024/07/bag1.png" className="img-box" alt="" />
-              </div>
-              <div className="flex-1 text-center justify-items-center pt-5">
-                <strong>bag and scarf</strong> <br />
-                <small>کیف و شال</small>
-              </div>
-            </div>
-           </div>
-            
-           
-           
-          
-           
-           
 
-        </div>
+      <div className="flex gap-3.5 m-6 justify-center flex-row-reverse flex-wrap">
+        <CategoryCard
+          imgSrc="https://laletka.com/wp-content/uploads/2024/07/jacket-raincoat.png"
+          title="puffer and trench coat"
+          subtitle="کاپشن و بارونی"
+        />
+
+        <CategoryCard
+          imgSrc="https://laletka.com/wp-content/uploads/2024/07/pullover-turtleneck.png"
+          title="pullover and turtleneck"
+          subtitle="بافت و یقه اسکی"
+        />
+
+        <CategoryCard
+          imgSrc="https://laletka.com/wp-content/uploads/2024/07/overcoat-jacket.png"
+          title="shirt & dress"
+          subtitle="التو و شکت"
+        />
+
+        <CategoryCard
+          imgSrc="https://laletka.com/wp-content/uploads/2024/07/vest-poncho.png"
+          title="vest and poncho"
+          subtitle="وست و پانچو"
+        />
+
+        <CategoryCard
+          imgSrc="https://laletka.com/wp-content/uploads/2024/07/bag1.png"
+          title="bag and scarf"
+          subtitle="کیف و شال"
+        />
+    </div>
        
         
       </section>
